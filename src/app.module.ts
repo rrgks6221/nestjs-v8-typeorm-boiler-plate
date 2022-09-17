@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppService } from '@src/app.service';
 import { AppController } from '@src/app.controller';
 import { ConfigModule } from '@nestjs/config';
 import { HealthModule } from './modules/health/health.module';
@@ -18,6 +17,5 @@ import Joi from 'joi';
     HealthModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
